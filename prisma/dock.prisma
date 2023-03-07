@@ -1,0 +1,8 @@
+model Dock {
+  id        Int      @id @default(autoincrement())
+  name      String
+  address   String
+  capacity  Int
+  description String?
+  sailboats Sailboat[]
+}

@@ -1,0 +1,8 @@
+model Sailboat {
+  id        Int      @id @default(autoincrement())
+  owner     String
+  dock      Dock?    @relation(fields: [dockId], references: [id])
+  dockId    Int?
+  length    Int
+  active    Boolean
+}
